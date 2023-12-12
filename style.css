@@ -1,0 +1,31 @@
+table {
+    width: 50%;        /* Задает ширину таблицы равной 50% от ширины родительского элемента */
+    margin: 0 auto;    /* Автоматические отступы слева и справа для центрирования таблицы */
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #2f0998;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Дополнительно можно стилизовать заголовки таблицы */
+th {
+    background-color: #d2d9f6;  /* Цвет фона заголовков */
+    color: black;              /* Цвет текста заголовков */
+}
+ 
+@media (max-width: 600px) {
+    table {
+        width: 100%;  /* На маленьких экранах таблица занимает всю доступную ширину */
+    }
+}
+/* Стиль для всех ячеек в колонке с классом 'hebrew-column' */
+.hebrew-column, .hebrew-column ~ td {
+    font-family: 'Arial', sans-serif;
+}
+.hebrew-column, .hebrew-column ~ td {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px; /* Увеличенный размер шрифта */
+}
