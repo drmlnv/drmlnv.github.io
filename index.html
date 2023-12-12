@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Аудио Таблица</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .audio-button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Перевод</th>
+                <th>Иврит</th>
+                <th>Звук</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Шули, я подумал о чем-то.</td>
+                <td>שולי, חשבתי על משהו</td>
+                <td><button class="audio-button" onclick="document.getElementById('track1').play()">Воспроизвести</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Что такое, чайник?</td>
+                <td>?מה קומקום</td>
+                <td><button class="audio-button" onclick="document.getElementById('track2').play()">Воспроизвести</button></td>
+            </tr>
+            <!-- Добавьте оставшиеся строки таблицы аналогичным образом -->
+        </tbody>
+    </table>
+    <!-- Аудио элементы (скрыты) -->
+    <audio id="track1" src="padded_track_1.mp3"></audio>
+    <audio id="track2" src="padded_track_2.mp3"></audio>
+    <!-- Добавьте оставшиеся аудио элементы аналогичным образом -->
+    <script>
+        // Добавьте JavaScript, если необходимо дополнительное взаимодействие
+    </script>
+</body>
+</html>
