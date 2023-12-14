@@ -16,8 +16,21 @@ td, th {
 
 .hebrew-text {
     font-family: 'Arial', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+    text-align: right;
+    /* width: 40%; */
 }
+
+.russian-text {
+    
+    text-align: left;
+}
+
+.number {
+    
+    text-align: center;
+}
+
 
 .audio-button {
     cursor: pointer;
@@ -27,4 +40,24 @@ td, th {
     table {
         width: 100%;
     }
+}
+
+.youtube-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: rgb(175, 204, 239); /* Выберите подходящий цвет фона */
+    z-index: 1; /* Убедитесь, что заголовок будет поверх других элементов */
+}
+
+h1 {
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
