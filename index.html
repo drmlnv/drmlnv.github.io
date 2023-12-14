@@ -9,27 +9,556 @@
     <table>
         <thead>
             <tr>
-                <th>№</th>
+                <th>﻿Звук</th>
                 <th>Перевод</th>
-                <th class="hebrew-column">Иврит</th>
-                <th>Звук</th>
+                <th>Иврит</th>
+                <th>№</th>
             </tr>
         </thead>
         <tbody>
-            <!-- Пример строки таблицы -->
             <tr>
-                <td>1</td>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_1.mp3')">Play</button><audio id="trackpadded_track_1.mp3" src="padded_track_1.mp3"></audio></td>
                 <td>Шули, я подумал о чем-то.</td>
-                <td class="hebrew-text">שולי, חשבתי על משהו</td>
-                <td><button class="audio-button" onclick="playAudio('track1')">Воспроизвести</button></td>
+                <td class="hebrew-text">שולי, חשבתי על משהו  </td>
+                <td>1</td>
             </tr>
-            
-            <!-- Добавьте другие строки аналогично -->
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_2.mp3')">Play</button><audio id="trackpadded_track_2.mp3" src="padded_track_2.mp3"></audio></td>
+                <td>Что такое, чайник?</td>
+                <td class="hebrew-text">?מה קומקום</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_3.mp3')">Play</button><audio id="trackpadded_track_3.mp3" src="padded_track_3.mp3"></audio></td>
+                <td>Ты тратишь много времени на посуду каждый раз.</td>
+                <td class="hebrew-text">אתה מבזבז המון זמן על כלים כל פעם</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_4.mp3')">Play</button><audio id="trackpadded_track_4.mp3" src="padded_track_4.mp3"></audio></td>
+                <td>Может, купишь посудомоечную машину?</td>
+                <td class="hebrew-text">?אולי תקנה מדיח</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_5.mp3')">Play</button><audio id="trackpadded_track_5.mp3" src="padded_track_5.mp3"></audio></td>
+                <td>У него нет денег на посудомоечную машину.</td>
+                <td class="hebrew-text">אין לו כסף למדיח</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_6.mp3')">Play</button><audio id="trackpadded_track_6.mp3" src="padded_track_6.mp3"></audio></td>
+                <td>Извини, Игаль.</td>
+                <td class="hebrew-text">סליחה,יגאל</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_7.mp3')">Play</button><audio id="trackpadded_track_7.mp3" src="padded_track_7.mp3"></audio></td>
+                <td>Откуда ты знаешь, в каком я финансовом положении?</td>
+                <td class="hebrew-text">מאיפה אתה יודע מה מצבי הכלכלי?</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_8.mp3')">Play</button><audio id="trackpadded_track_8.mp3" src="padded_track_8.mp3"></audio></td>
+                <td>У меня есть два помидора и кусочек сыра внутри, Шули.</td>
+                <td class="hebrew-text">יש לי שתי עגבניות וקוטג&#x27; בפנים, שולי</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_9.mp3')">Play</button><audio id="trackpadded_track_9.mp3" src="padded_track_9.mp3"></audio></td>
+                <td>Я могу сдавать в аренду полки.</td>
+                <td class="hebrew-text">אני יכול להשכיר מדפים</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_10.mp3')">Play</button><audio id="trackpadded_track_10.mp3" src="padded_track_10.mp3"></audio></td>
+                <td>Хорошо, у меня сейчас нет выступлений, что мне делать?</td>
+                <td class="hebrew-text">טוב בסדר אין לי הופעות כרגע, מה אני אעשה?</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_11.mp3')">Play</button><audio id="trackpadded_track_11.mp3" src="padded_track_11.mp3"></audio></td>
+                <td>Эти вещи занимают время.</td>
+                <td class="hebrew-text">זה לוקח זמן הדברים האלה</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_12.mp3')">Play</button><audio id="trackpadded_track_12.mp3" src="padded_track_12.mp3"></audio></td>
+                <td>Нужно тренироваться, продвигать себя.</td>
+                <td class="hebrew-text">..צריך להתאמן, לשווק את עצמך</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_13.mp3')">Play</button><audio id="trackpadded_track_13.mp3" src="padded_track_13.mp3"></audio></td>
+                <td>Это не случится за один день.</td>
+                <td class="hebrew-text">זה לא מהיום למחר</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_14.mp3')">Play</button><audio id="trackpadded_track_14.mp3" src="padded_track_14.mp3"></audio></td>
+                <td>Это именно то, что я говорю, Шули!</td>
+                <td class="hebrew-text">זה בדיוק מה שאני אומר, שולי!</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_15.mp3')">Play</button><audio id="trackpadded_track_15.mp3" src="padded_track_15.mp3"></audio></td>
+                <td>Купи посудомоечную машину.</td>
+                <td class="hebrew-text">תקנה מדיח</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_16.mp3')">Play</button><audio id="trackpadded_track_16.mp3" src="padded_track_16.mp3"></audio></td>
+                <td>У тебя будет больше времени для тренировок и продвижения.</td>
+                <td class="hebrew-text">יהיה לך יותר זמן לאימונים ולשיווק</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_17.mp3')">Play</button><audio id="trackpadded_track_17.mp3" src="padded_track_17.mp3"></audio></td>
+                <td>И у тебя будет больше выступлений!</td>
+                <td class="hebrew-text">יכנסו לך יותר הופעות גם!</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_18.mp3')">Play</button><audio id="trackpadded_track_18.mp3" src="padded_track_18.mp3"></audio></td>
+                <td>Ты сможешь купить посудомоечную машину.</td>
+                <td class="hebrew-text">תוכל לקנות מדיח</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_19.mp3')">Play</button><audio id="trackpadded_track_19.mp3" src="padded_track_19.mp3"></audio></td>
+                <td>Хорошо, есть еще у кого-нибудь совет для меня?</td>
+                <td class="hebrew-text">טוב בסדר, יש לעוד מישהו עצה בשבילי?</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_20.mp3')">Play</button><audio id="trackpadded_track_20.mp3" src="padded_track_20.mp3"></audio></td>
+                <td>Жизненный совет?</td>
+                <td class="hebrew-text">טיפ לחיים?</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_21.mp3')">Play</button><audio id="trackpadded_track_21.mp3" src="padded_track_21.mp3"></audio></td>
+                <td>Большое спасибо, спокойной ночи.</td>
+                <td class="hebrew-text">תודה רבה, לילה טוב</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_22.mp3')">Play</button><audio id="trackpadded_track_22.mp3" src="padded_track_22.mp3"></audio></td>
+                <td>А, извини, извини.</td>
+                <td class="hebrew-text">אה סליחה, סליחה</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_23.mp3')">Play</button><audio id="trackpadded_track_23.mp3" src="padded_track_23.mp3"></audio></td>
+                <td>Что?</td>
+                <td class="hebrew-text">הא?</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_24.mp3')">Play</button><audio id="trackpadded_track_24.mp3" src="padded_track_24.mp3"></audio></td>
+                <td>Это все? Ты закончил?</td>
+                <td class="hebrew-text">זהו? סיימת?</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_25.mp3')">Play</button><audio id="trackpadded_track_25.mp3" src="padded_track_25.mp3"></audio></td>
+                <td>Что насчет нас?</td>
+                <td class="hebrew-text">מה איתנו?</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_26.mp3')">Play</button><audio id="trackpadded_track_26.mp3" src="padded_track_26.mp3"></audio></td>
+                <td>А.. завтра уже.</td>
+                <td class="hebrew-text">אה..מחר כבר</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_27.mp3')">Play</button><audio id="trackpadded_track_27.mp3" src="padded_track_27.mp3"></audio></td>
+                <td>Ебтить, я знал!</td>
+                <td class="hebrew-text">כוסאחתק, ידעתי!</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_28.mp3')">Play</button><audio id="trackpadded_track_28.mp3" src="padded_track_28.mp3"></audio></td>
+                <td>Цадок, оставь, хватит.</td>
+                <td class="hebrew-text">צדוק עזוב, די</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_29.mp3')">Play</button><audio id="trackpadded_track_29.mp3" src="padded_track_29.mp3"></audio></td>
+                <td>Не говори мне хватит!</td>
+                <td class="hebrew-text">אל תגידי לי די!</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_30.mp3')">Play</button><audio id="trackpadded_track_30.mp3" src="padded_track_30.mp3"></audio></td>
+                <td>Мы всегда остаемся вместе!</td>
+                <td class="hebrew-text">תמיד אנחנו נשארים!</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_31.mp3')">Play</button><audio id="trackpadded_track_31.mp3" src="padded_track_31.mp3"></audio></td>
+                <td>Я и ты, всегда!</td>
+                <td class="hebrew-text">אני ואת, תמיד!</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_32.mp3')">Play</button><audio id="trackpadded_track_32.mp3" src="padded_track_32.mp3"></audio></td>
+                <td>Ладно, у меня закончилось моющее средство для посуды, что мне делать?</td>
+                <td class="hebrew-text">בסדר, נגמר לי הסבון כלים, מה אני אעשה?</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_33.mp3')">Play</button><audio id="trackpadded_track_33.mp3" src="padded_track_33.mp3"></audio></td>
+                <td>Следующая покупка.</td>
+                <td class="hebrew-text">נגלה הבאה</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_34.mp3')">Play</button><audio id="trackpadded_track_34.mp3" src="padded_track_34.mp3"></audio></td>
+                <td>Мы уже ждем четыре бутылки!</td>
+                <td class="hebrew-text"> אנחנו ארבע נגלות מחכים כבר!</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_35.mp3')">Play</button><audio id="trackpadded_track_35.mp3" src="padded_track_35.mp3"></audio></td>
+                <td>Посмотри, как она выглядит!</td>
+                <td class="hebrew-text">תראה איך היא נראית!</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_36.mp3')">Play</button><audio id="trackpadded_track_36.mp3" src="padded_track_36.mp3"></audio></td>
+                <td>Иди купи моющее средство для посуды.</td>
+                <td class="hebrew-text">לך תקנה סבון כלים</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_37.mp3')">Play</button><audio id="trackpadded_track_37.mp3" src="padded_track_37.mp3"></audio></td>
+                <td>Я сейчас не выйду, ты нормальный? В 11 вечера.</td>
+                <td class="hebrew-text">..אני לא יוצא עכשיו, אתה נורמלי? 11 בלילה</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_38.mp3')">Play</button><audio id="trackpadded_track_38.mp3" src="padded_track_38.mp3"></audio></td>
+                <td>Завтра.</td>
+                <td class="hebrew-text">מחר</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_39.mp3')">Play</button><audio id="trackpadded_track_39.mp3" src="padded_track_39.mp3"></audio></td>
+                <td>А, завтра?</td>
+                <td class="hebrew-text">אה, מחר?</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_40.mp3')">Play</button><audio id="trackpadded_track_40.mp3" src="padded_track_40.mp3"></audio></td>
+                <td>Да.</td>
+                <td class="hebrew-text">כן</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_41.mp3')">Play</button><audio id="trackpadded_track_41.mp3" src="padded_track_41.mp3"></audio></td>
+                <td>Ты знаешь, в чем твоя проблема?</td>
+                <td class="hebrew-text">אתה יודע מה הבעיה שלך?</td>
+                <td>41</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_42.mp3')">Play</button><audio id="trackpadded_track_42.mp3" src="padded_track_42.mp3"></audio></td>
+                <td>Цадок, хватит.. - Не говори мне хватит, Мириам!</td>
+                <td class="hebrew-text">צדוק,די.. - אל תגידי לי די, מרים!</td>
+                <td>42</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_43.mp3')">Play</button><audio id="trackpadded_track_43.mp3" src="padded_track_43.mp3"></audio></td>
+                <td>Ты знаешь, в чем твоя проблема?</td>
+                <td class="hebrew-text">אתה יודע מה הבעיה שלך?</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_44.mp3')">Play</button><audio id="trackpadded_track_44.mp3" src="padded_track_44.mp3"></audio></td>
+                <td>Нет, в чем моя проблема?!</td>
+                <td class="hebrew-text">לא, מה הבעיה שלי?!</td>
+                <td>44</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_45.mp3')">Play</button><audio id="trackpadded_track_45.mp3" src="padded_track_45.mp3"></audio></td>
+                <td>Давай скажи мне!</td>
+                <td class="hebrew-text">בוא תגיד לי!</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_46.mp3')">Play</button><audio id="trackpadded_track_46.mp3" src="padded_track_46.mp3"></audio></td>
+                <td>Ты всегда откладываешь на завтра! Всегда!</td>
+                <td class="hebrew-text">אתה תמיד תדחה למחר! תמיד!</td>
+                <td>46</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_47.mp3')">Play</button><audio id="trackpadded_track_47.mp3" src="padded_track_47.mp3"></audio></td>
+                <td>Ты никогда не закончишь то, что начал!</td>
+                <td class="hebrew-text">אתה אף פעם לא תסיים מה התחלת!</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_48.mp3')">Play</button><audio id="trackpadded_track_48.mp3" src="padded_track_48.mp3"></audio></td>
+                <td>И из-за этого ты всегда будешь никем.</td>
+                <td class="hebrew-text">ובגלל זה אתה תמיד תישאר אפס</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_49.mp3')">Play</button><audio id="trackpadded_track_49.mp3" src="padded_track_49.mp3"></audio></td>
+                <td>Всегда будешь ничем.</td>
+                <td class="hebrew-text">תמיד תישאר כלום</td>
+                <td>49</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_50.mp3')">Play</button><audio id="trackpadded_track_50.mp3" src="padded_track_50.mp3"></audio></td>
+                <td>У тебя никогда не будет выступлений.</td>
+                <td class="hebrew-text">לא יהיו לך הופעות</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_51.mp3')">Play</button><audio id="trackpadded_track_51.mp3" src="padded_track_51.mp3"></audio></td>
+                <td>И у тебя никогда не будет посудомоечной машины!</td>
+                <td class="hebrew-text"> ובחיים לא יהיה לך מדיח!</td>
+                <td>51</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_52.mp3')">Play</button><audio id="trackpadded_track_52.mp3" src="padded_track_52.mp3"></audio></td>
+                <td>Ооо-ох...</td>
+                <td class="hebrew-text">אווו-ווה...</td>
+                <td>52</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_53.mp3')">Play</button><audio id="trackpadded_track_53.mp3" src="padded_track_53.mp3"></audio></td>
+                <td>Знаешь что? Теперь по принципу ты подождешь до завтра.</td>
+                <td class="hebrew-text">יודע מה? עכשיו על פרינציפ אתה מחכה למחר</td>
+                <td>53</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_54.mp3')">Play</button><audio id="trackpadded_track_54.mp3" src="padded_track_54.mp3"></audio></td>
+                <td>Завтра?</td>
+                <td class="hebrew-text">מחר?</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_55.mp3')">Play</button><audio id="trackpadded_track_55.mp3" src="padded_track_55.mp3"></audio></td>
+                <td>Да.</td>
+                <td class="hebrew-text">כן</td>
+                <td>55</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_56.mp3')">Play</button><audio id="trackpadded_track_56.mp3" src="padded_track_56.mp3"></audio></td>
+                <td>Ты оставляешь нас так до завтра?</td>
+                <td class="hebrew-text">אתה משאיר אותנו ככה עד מחר?</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_57.mp3')">Play</button><audio id="trackpadded_track_57.mp3" src="padded_track_57.mp3"></audio></td>
+                <td>...Цадок, оставь, хватит.</td>
+                <td class="hebrew-text">...צדוק עזוב, די</td>
+                <td>57</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_58.mp3')">Play</button><audio id="trackpadded_track_58.mp3" src="padded_track_58.mp3"></audio></td>
+                <td>Ты оставляешь нас так до завтра?!</td>
+                <td class="hebrew-text">אתה משאיר אותנו ככה עד מחר?!</td>
+                <td>58</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_59.mp3')">Play</button><audio id="trackpadded_track_59.mp3" src="padded_track_59.mp3"></audio></td>
+                <td>Да!</td>
+                <td class="hebrew-text">כן!</td>
+                <td>59</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_60.mp3')">Play</button><audio id="trackpadded_track_60.mp3" src="padded_track_60.mp3"></audio></td>
+                <td>Почисти это завтра!</td>
+                <td class="hebrew-text">נקה את זה מחר!</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_61.mp3')">Play</button><audio id="trackpadded_track_61.mp3" src="padded_track_61.mp3"></audio></td>
+                <td>Цадок, нет...</td>
+                <td class="hebrew-text">צדוק, לא...</td>
+                <td>61</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_62.mp3')">Play</button><audio id="trackpadded_track_62.mp3" src="padded_track_62.mp3"></audio></td>
+                <td>Ой ну, правда.. - Цадок?</td>
+                <td class="hebrew-text">אוי נו,באמת.. - צדוק?</td>
+                <td>62</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_63.mp3')">Play</button><audio id="trackpadded_track_63.mp3" src="padded_track_63.mp3"></audio></td>
+                <td>Цадок, ты в порядке?</td>
+                <td class="hebrew-text">צדוק אתה בסדר?</td>
+                <td>63</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_64.mp3')">Play</button><audio id="trackpadded_track_64.mp3" src="padded_track_64.mp3"></audio></td>
+                <td>Да, он в порядке...</td>
+                <td class="hebrew-text">כן,הוא בסדר...</td>
+                <td>64</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_65.mp3')">Play</button><audio id="trackpadded_track_65.mp3" src="padded_track_65.mp3"></audio></td>
+                <td>У него здесь 800 кусочков!</td>
+                <td class="hebrew-text">הוא 800 חתיכות כאן!</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_66.mp3')">Play</button><audio id="trackpadded_track_66.mp3" src="padded_track_66.mp3"></audio></td>
+                <td>&quot;Ладно&quot;...</td>
+                <td class="hebrew-text">&quot;בסדר&quot;...</td>
+                <td>66</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_67.mp3')">Play</button><audio id="trackpadded_track_67.mp3" src="padded_track_67.mp3"></audio></td>
+                <td>...Нет.</td>
+                <td class="hebrew-text">...לא</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_68.mp3')">Play</button><audio id="trackpadded_track_68.mp3" src="padded_track_68.mp3"></audio></td>
+                <td>Нет, я не верю... это не может быть!</td>
+                <td class="hebrew-text">לא אני לא מאמינה...זה לא יכול להיות!</td>
+                <td>68</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_69.mp3')">Play</button><audio id="trackpadded_track_69.mp3" src="padded_track_69.mp3"></audio></td>
+                <td>Коби, Коби.</td>
+                <td class="hebrew-text">קובי,קובי</td>
+                <td>69</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_70.mp3')">Play</button><audio id="trackpadded_track_70.mp3" src="padded_track_70.mp3"></audio></td>
+                <td>Помоги мне поднять этого тупицу.</td>
+                <td class="hebrew-text">תעזור לי לאסוף את המטומטם הזה</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_71.mp3')">Play</button><audio id="trackpadded_track_71.mp3" src="padded_track_71.mp3"></audio></td>
+                <td>Сделай мне одолжение.</td>
+                <td class="hebrew-text">תעשה לי טובה</td>
+                <td>71</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_72.mp3')">Play</button><audio id="trackpadded_track_72.mp3" src="padded_track_72.mp3"></audio></td>
+                <td>Мне нельзя стекло, брат.</td>
+                <td class="hebrew-text">אסור לי זכוכית, אחי</td>
+                <td>72</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_73.mp3')">Play</button><audio id="trackpadded_track_73.mp3" src="padded_track_73.mp3"></audio></td>
+                <td>Тебе нельзя стекло...</td>
+                <td class="hebrew-text">אסור לך זכוכית...</td>
+                <td>73</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_74.mp3')">Play</button><audio id="trackpadded_track_74.mp3" src="padded_track_74.mp3"></audio></td>
+                <td>Что тебе можно?</td>
+                <td class="hebrew-text">מה מותר לך?</td>
+                <td>74</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_75.mp3')">Play</button><audio id="trackpadded_track_75.mp3" src="padded_track_75.mp3"></audio></td>
+                <td>Сколько денег я потратил на этого придурка.</td>
+                <td class="hebrew-text">כמה כסף זרקתי על הדפוק הזה</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_76.mp3')">Play</button><audio id="trackpadded_track_76.mp3" src="padded_track_76.mp3"></audio></td>
+                <td>Ты мог бы купить посудомоечную машину.</td>
+                <td class="hebrew-text">היית יכול לקנות מדיח</td>
+                <td>76</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_77.mp3')">Play</button><audio id="trackpadded_track_77.mp3" src="padded_track_77.mp3"></audio></td>
+                <td>Замолчи уже про посудомоечную машину!</td>
+                <td class="hebrew-text">סתום עם המדיח כבר!</td>
+                <td>77</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_78.mp3')">Play</button><audio id="trackpadded_track_78.mp3" src="padded_track_78.mp3"></audio></td>
+                <td>Цадок, что ты сделал?!</td>
+                <td class="hebrew-text">צדוק מה עשית?!</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_79.mp3')">Play</button><audio id="trackpadded_track_79.mp3" src="padded_track_79.mp3"></audio></td>
+                <td>Ты моя жизнь...</td>
+                <td class="hebrew-text">חיים שלי אתה...</td>
+                <td>79</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_80.mp3')">Play</button><audio id="trackpadded_track_80.mp3" src="padded_track_80.mp3"></audio></td>
+                <td>Достаточно, Шули, больше нет места, халас.</td>
+                <td class="hebrew-text">די שולי, אין מקום יותר, חלאס</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_81.mp3')">Play</button><audio id="trackpadded_track_81.mp3" src="padded_track_81.mp3"></audio></td>
+                <td>Опустоши меня, черт возьми.</td>
+                <td class="hebrew-text">רוקן אותי, באמא&#x27;שך</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_82.mp3')">Play</button><audio id="trackpadded_track_82.mp3" src="padded_track_82.mp3"></audio></td>
+                <td>Не сейчас!</td>
+                <td class="hebrew-text">לא עכשיו!</td>
+                <td>82</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_83.mp3')">Play</button><audio id="trackpadded_track_83.mp3" src="padded_track_83.mp3"></audio></td>
+                <td>Что... завтра?</td>
+                <td class="hebrew-text">מה... מחר?</td>
+                <td>83</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_84.mp3')">Play</button><audio id="trackpadded_track_84.mp3" src="padded_track_84.mp3"></audio></td>
+                <td>Да!</td>
+                <td class="hebrew-text">כן!</td>
+                <td>84</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_85.mp3')">Play</button><audio id="trackpadded_track_85.mp3" src="padded_track_85.mp3"></audio></td>
+                <td>Завтра!</td>
+                <td class="hebrew-text">מחר!</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_86.mp3')">Play</button><audio id="trackpadded_track_86.mp3" src="padded_track_86.mp3"></audio></td>
+                <td>Спокойной ночи!</td>
+                <td class="hebrew-text">לילה טוב!</td>
+                <td>86</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_87.mp3')">Play</button><audio id="trackpadded_track_87.mp3" src="padded_track_87.mp3"></audio></td>
+                <td>Цадок...</td>
+                <td class="hebrew-text">צדוק...</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_88.mp3')">Play</button><audio id="trackpadded_track_88.mp3" src="padded_track_88.mp3"></audio></td>
+                <td>Как нам теперь продолжить, Цадок, как?</td>
+                <td class="hebrew-text">איך ממשיכים מכאן צדוק, איך?</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_89.mp3')">Play</button><audio id="trackpadded_track_89.mp3" src="padded_track_89.mp3"></audio></td>
+                <td>Я осталась последняя из набора</td>
+                <td class="hebrew-text">נשארתי אחרונה מהסט</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td><button class="audio-button" onclick="playAudio('trackpadded_track_90.mp3')">Play</button><audio id="trackpadded_track_90.mp3" src="padded_track_90.mp3"></audio></td>
+                <td>Большое спасибо.</td>
+                <td class="hebrew-text">תודה רבה</td>
+                <td>90</td>
+            </tr>
         </tbody>
     </table>
-    <!-- Пример аудио элемента -->
-    <audio id="track1" src="padded_track_1.mp3"></audio>
-    <!-- Добавьте другие аудио элементы -->
+    
 
     <script src="script.js"></script> <!-- Ссылка на ваш JavaScript файл -->
 </body>
