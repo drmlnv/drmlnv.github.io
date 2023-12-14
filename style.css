@@ -26,14 +26,21 @@ td, th {
     text-align: left;
 }
 
+.sound_button-column {
+    
+    width: 15mm;
+}
+
 .number {
     
     text-align: center;
+    width: 1cm;
 }
 
 
 .audio-button {
     cursor: pointer;
+    
 }
 
 @media (max-width: 600px) {
